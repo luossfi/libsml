@@ -6,7 +6,7 @@
 libSML is a library which implements the Smart Message Language (SML) protocol specified by VDE's Forum Netztechnik/Netzbetrieb (FNN).
 It can be utilized to communicate to FNN specified Smart Meters or Smart Meter components (EDL/MUC).
 
-### This is the official libSML repo, the original dailab libsml repo on GitHub is dead 
+### This is the official libSML repo, the original dailab libsml repo on GitHub is dead
 
 ### Usage
 An example how to use libSML is in the examples directory.
@@ -16,11 +16,18 @@ Ubuntu
 
 	apt-get install uuid-dev uuid-runtime
 
+Arch Linux
+
+	pacman -S util-linux
+
 #### Compilation
- 
+
+	mkdir build
+	cd build
+	cmake ..
 	make
 
-The resulting binaries are located in sml/lib
+The resulting binary is located in build/sml
 
 #### Testing
 For testing data have a look at https://github.com/devZer0/libsml-testing
